@@ -11,7 +11,7 @@ export default function Intro() {
   useEffect(() => {
     init(textRef.current, { 
       showCursor: true, 
-      backDelay: 2000,
+      backDelay: 1500,
       backSpeed: 60,
       strings: ['Developer', 'Engineer'] 
     });

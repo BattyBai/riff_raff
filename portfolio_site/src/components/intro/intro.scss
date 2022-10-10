@@ -5,8 +5,8 @@
     .left{
         flex: 0.5;
         overflow: hidden;
-        padding-top:9em;
-        position: relative;
+        padding-top:8em;
+
 
         .imgContainer{
             width: 700px;
@@ -18,7 +18,7 @@
             justify-content: center;
             float: right;
             
-            .img{
+            img{
                 height: 90%;
             }
         }
@@ -50,6 +50,19 @@
                 span{
                     font-size: inherit;
                     color: crimson;
+                }
+
+                .ityped-cursor{
+                    animation: blink 1s infinite;
+                }
+
+                @keyframes blink {
+                    50%{
+                        opacity: 1;
+                    }
+                    100%{
+                        opacity: 0;
+                    }
                 }
             }
         }

@@ -11,7 +11,9 @@ export default function Topbar({menuOpen, setMenuOpen}) {
           <a href="#intro" className='logo'>pure.</a> 
           <div className="itemsContainer">
              <PersonIcon className='icon'/>
-             <span>111 222 3333</span>
+             <a href="assets/Isaac Pure Resume 22-09.pdf" download>
+              <span>my resume</span>
+             </a>
           </div>
           <div className="itemsContainer">
              <EmailIcon className='icon'/>
