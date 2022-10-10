@@ -1,64 +1,103 @@
 @import '../../global.scss';
 
 .portfolio{
-    background-color: white;
+    background-color: crimson;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    position: relative;
 
-    h1{
-        font-size: 50px;
+    .arrow{
+        height: 50px;
+        position: absolute;
+
+        &.left{
+            left: 100px;
+            transform: rotate(90deg);
+        }
+
+        &.right{
+            right: 100px;
+            transform: rotate(-90deg);
+        }
     }
 
-    ul{
-        margin: 10px;
-        padding: 0;
-        list-style: none;
+    .slider{
+        height: 350px;
         display: flex;
+        position: absolute;
+        left: 0;  
 
-
-    }
-    .container{
-        width: 70%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        .item{
-            width: 400px;
-            height: 350px;
-            border-radius: 20px;
-            border: 1px solid rgb(240, 239, 239);
-            margin: 10px 20px;
+        .container{
+            width: 100vw;
             display: flex;
-            flex-direction: column;
             align-items: center;
-            justify-content:center;
-            color: white;
-            position: relative;
-            transition: 0.5s ease;
-            cursor: pointer;
+            justify-content: center;
 
-            h3{
-                position: absolute;
-                font-size: 20px;
-            }
-
-
-
-            img{
-                width: 100%;
+            .item{
+                width: 800px;
                 height: 100%;
-                object-fit: cover;
-                z-index: 1;
-            }
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
-            &:hover{
-                background-color: $mainColor;
-                img{
-                    opacity: 0.2;
-                    z-index: 0;
+                .left{
+                  flex: 4;
+                  height: 80%; 
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+
+                  .leftContainer{
+                    width: 90%;
+                    height: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .imgContainer{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background-color: coral;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                        img{
+                            width: 25px;
+                        }
+                    }
+                    h2{
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 13px;
+                    }
+                    span{
+                        font-size: 12px;
+                        font-weight: 600;
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                  }
+                }
+                .right{
+                  flex: 8;
+                  height: 100%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  overflow: hidden;
+
+                  img{
+                    width: 400px;
+                    height: 400px;
+                    object-fit: cover;
+                   
+                  }
                 }
             }
         }
