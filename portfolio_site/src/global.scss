@@ -7,3 +7,10 @@ $width: 768px;
         @content
     }
 }
+$width2: 1078px;
+
+@mixin mobile2{
+    @media (max-width: #{$width2}){
+        @content
+    }
+}

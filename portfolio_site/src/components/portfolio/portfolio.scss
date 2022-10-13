@@ -10,6 +10,9 @@
     .arrow{
         height: 50px;
         position: absolute;
+        @include mobile2{
+            display: none;
+        }
 
         &.left{
             left: 100px;
@@ -29,6 +32,12 @@
         left: 0;  
         transition: all 1S ease-out;
 
+        @include mobile{
+            height: 90vh;
+            flex-direction: column;
+            justify-content: center;
+        }
+
         .container{
             width: 100vw;
             display: flex;
@@ -44,12 +53,22 @@
                 align-items: center;
                 justify-content: center;
 
+                @include mobile{
+                   width: 90%;
+                   height: 200px;
+                   margin: 20px 0px;
+                }
+
                 .left{
                   flex: 4;
                   height: 80%; 
                   display: flex;
                   align-items: center;
                   justify-content: center;
+
+                  @include mobile{
+                        flex:5
+                }
 
                   .leftContainer{
                     width: 90%;
@@ -73,10 +92,16 @@
                     }
                     h2{
                         font-size: 40px;
+                        @include mobile{
+                            font-size: 21px;
+                        }
                     }
                     p{
                         font-size: 20px;
                         margin-bottom: 10px;
+                        @include mobile{
+                            font-size: 11px;
+                        }
                     }
                     a{
                         text-decoration: none;
@@ -86,6 +111,9 @@
                         font-weight: 600;
                         // text-decoration: none;
                         cursor: pointer;
+                        @include mobile{
+                            font-size: 10px;
+                        }
                     }
                   }
                 }
@@ -96,12 +124,18 @@
                   align-items: center;
                   justify-content: center;
                   overflow: hidden;
+                  @include mobile{
+                       flex: 6 
+                }
 
                   img{
                     width: 400px;
                     height: 400px;
                     object-fit: cover;
-                   
+
+                    @include mobile{
+                        width: 195px;
+                    }
                   }
                 }
             }

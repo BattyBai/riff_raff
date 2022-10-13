@@ -40,4 +40,23 @@
             }
         }
     }
+    .footer{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        .bottom-list{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            .item{
+                text-decoration: none;
+                img{
+                    filter: invert(100%) sepia(83%) saturate(0%) hue-rotate(343deg) brightness(108%) contrast(101%);
+                    height: 40px;
+                }
+            }
+        }
+    }
 }
