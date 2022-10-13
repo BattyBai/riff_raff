@@ -27,12 +27,12 @@ const Menu = ({menuOpen, setMenuOpen}) => {
               </a>
             </li>
             <li className='item'>
-              <a href="">
+              <a href="https://www.linkedin.com/in/isaacpure/">
                 <img src="assets/003-linkedin.png" alt="" />
               </a>
             </li>
             <li className='item'>
-              <a href="">
+              <a href="https://github.com/BattyBai">
                 <img src="assets/002-github.png" alt="" />
               </a>
             </li>
